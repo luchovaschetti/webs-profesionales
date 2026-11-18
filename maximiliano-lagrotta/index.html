@@ -1,0 +1,121 @@
+<!DOCTYPE html><html lang="es-AR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex"><title>Maximiliano Lagrotta · Contador Público en Bahía Blanca</title>
+<meta name="description" content="Monotributo, sueldos, sociedades e impuestos en Bahía Blanca. Consultas por WhatsApp."><meta name="theme-color" content="#fbfaf6">
+<style>@font-face{font-family:"Txt";src:url(assets/inter-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Txt";src:url(assets/inter-600.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"Sch";src:url(assets/sch-400.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Sch";src:url(assets/sch-700.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:#fbfaf6;color:#18241d;font:400 17px/1.6 "Txt",system-ui,sans-serif}
+a{color:inherit}
+svg{fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.w{width:min(1100px,100% - 36px);margin:0 auto}
+.top{position:sticky;top:0;z-index:20;background:rgba(251,250,246,.94);backdrop-filter:blur(8px);border-bottom:1px solid #e3e0d6}
+.top .w{display:flex;align-items:center;justify-content:space-between;height:64px}
+.id b{display:block;font:700 19px/1 "Sch"}
+.id small{display:block;font-size:12.5px;color:#5b665f;margin-top:4px;letter-spacing:.04em}
+.top a.mini{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font:600 14px/1 "Txt";padding:10px 14px;border-radius:10px;background:#1f3b2d;color:#fbfaf6}
+.top a.mini svg{width:17px;height:17px}
+.hero{padding:clamp(40px,7vw,96px) 0 clamp(46px,7vw,90px);border-bottom:1px solid #e3e0d6}
+.hero .w{display:grid;gap:40px;align-items:end}
+@media(min-width:920px){.hero .w{grid-template-columns:1.2fr .8fr;gap:64px}}
+h1{margin:0;font:400 clamp(46px,8.6vw,92px)/.98 "Sch";letter-spacing:-.025em}
+.lead{margin:24px 0 30px;font-size:clamp(17px,2vw,20px);color:#3c4a42;max-width:30em}
+.acc{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 24px;border-radius:12px;text-decoration:none;font:600 16px/1 "Txt";border:1.5px solid #1f3b2d;color:#1f3b2d;background:transparent;cursor:pointer}
+.btn svg{width:20px;height:20px}
+.btn.a{background:#1f3b2d;color:#fbfaf6}
+.btn.a:hover{background:#2a4d3b}
+.libro{background:#fff;border:1px solid #e3e0d6;border-radius:18px;padding:22px 22px 8px;font-variant-numeric:tabular-nums}
+.libro h2{margin:0 0 4px;font:700 18px/1.2 "Sch"}
+.libro p{margin:0 0 14px;font-size:14px;color:#5b665f}
+.libro ul{list-style:none;margin:0;padding:0}
+.libro li{display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-top:1px dashed #d9d5c8;font-size:15px}
+.libro li b{font-weight:600}
+.libro li span{color:#2f6b4a;font-weight:600;white-space:nowrap}
+section.s{padding:clamp(56px,8vw,100px) 0 0}
+.cab{display:grid;gap:12px;margin-bottom:28px}
+@media(min-width:920px){.cab{grid-template-columns:1fr 1fr;gap:56px;align-items:end}}
+h2.t{margin:0;font:400 clamp(36px,6vw,58px)/1.02 "Sch";letter-spacing:-.02em}
+.cab p{margin:0;color:#3c4a42;max-width:32em}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:16px}
+.tab{border:1.5px solid #cfd6cc;background:#fff;color:#18241d;border-radius:999px;padding:12px 16px;font:600 15px/1 "Txt";cursor:pointer}
+.tab[aria-selected=true]{background:#1f3b2d;border-color:#1f3b2d;color:#fbfaf6}
+.panel{background:#eef2ea;border-radius:22px;padding:clamp(22px,4vw,36px);display:grid;gap:18px}
+@media(min-width:920px){.panel{grid-template-columns:1fr auto;align-items:center;gap:40px}}
+.panel h3{margin:0 0 8px;font:400 clamp(28px,4vw,40px)/1.05 "Sch"}
+.panel p{margin:0;color:#3c4a42;max-width:34em}
+.pasos{display:grid;gap:12px}
+@media(min-width:920px){.pasos{grid-template-columns:repeat(3,1fr)}}
+.paso{border-top:2px solid #18241d;padding-top:16px}
+.paso small{font:700 13px/1 "Txt";color:#2f6b4a;letter-spacing:.06em}
+.paso h3{margin:10px 0 6px;font:700 22px/1.15 "Sch"}
+.paso p{margin:0;color:#3c4a42;font-size:15.5px}
+.yo{display:grid;gap:28px;align-items:center}
+@media(min-width:920px){.yo{grid-template-columns:.7fr 1.3fr;gap:56px}}
+.foto{aspect-ratio:4/5;border-radius:22px;background:repeating-linear-gradient(135deg,#eef2ea 0 14px,#e5ebe1 14px 28px);display:grid;place-items:center;color:#5b665f;font:600 14px/1.3 "Txt";text-align:center;padding:20px;border:1px dashed #b9c4b5}
+.yo p{margin:0 0 14px;color:#3c4a42;font-size:18px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.chips span{border:1px solid #cfd6cc;border-radius:999px;padding:8px 12px;font-size:14px;background:#fff}
+.contacto{background:#1f3b2d;color:#fbfaf6;border-radius:28px;padding:clamp(24px,4vw,48px);display:grid;gap:26px}
+@media(min-width:920px){.contacto{grid-template-columns:.9fr 1.1fr;gap:56px}}
+.contacto h2.t{color:#fbfaf6}
+.contacto .in{color:#c9d6cc;margin:14px 0 0}
+.f{display:grid;gap:14px}
+.f label{display:grid;gap:8px;font:600 14px/1 "Txt";color:#c9d6cc}
+.f input,.f select,.f textarea{width:100%;font:400 16px/1.3 "Txt";color:#18241d;background:#fbfaf6;border:0;border-radius:12px;padding:14px 16px}
+.f textarea{min-height:90px;resize:vertical}
+.go{display:flex;align-items:center;justify-content:center;gap:10px;min-height:58px;border:0;border-radius:12px;background:#e9c46a;color:#18241d;font:700 17px/1 "Txt";cursor:pointer}
+.go svg{width:21px;height:21px}
+footer{margin-top:clamp(56px,8vw,100px);padding:28px 0 110px;border-top:1px solid #e3e0d6;color:#5b665f;font-size:14px}
+footer b{display:block;color:#18241d;font:700 17px/1.2 "Sch";margin-bottom:4px}
+.barra{position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(251,250,246,.96);border-top:1px solid #e3e0d6}
+.barra .btn{width:100%}
+.demo{position:fixed;right:0;bottom:86px;z-index:31;background:#1f3b2d;color:#fff;font:600 11px/1 "Txt";padding:6px 10px;border-radius:8px 0 0 8px}
+@media(min-width:920px){.barra{display:none}footer{padding-bottom:40px}.demo{bottom:20px}}
+:focus-visible{outline:3px solid #e9c46a;outline-offset:3px}
+</style>
+<script data-goatcounter="https://luchovaschetti.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script></head>
+<body><header class="top"><div class="w"><div class="id"><b>Maximiliano Lagrotta</b><small>CONTADOR PÚBLICO</small></div><a class="mini" data-wa href="#contacto"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Escribime</a></div></header>
+<main>
+<section class="hero"><div class="w"><div><h1>Tus números en orden, sin vueltas.</h1>
+<p class="lead">Contador público en Bahía Blanca. Monotributo, sueldos, sociedades e impuestos, explicado en criollo y con respuesta rápida por WhatsApp.</p>
+<div class="acc"><a class="btn a" data-wa href="#contacto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Escribime por WhatsApp</a><a class="btn" href="#que-necesitas">Ver en qué te ayudo<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div></div>
+<aside class="libro" aria-label="Qué me podés delegar"><h2>Lo que te sacás de encima</h2><p>Un mes típico trabajando juntos.</p>
+<ul><li><b>Facturación y registros</b><span>al día</span></li><li><b>Recategorización</b><span>enero y julio</span></li><li><b>Sueldos y cargas</b><span>todos los meses</span></li><li><b>Declaraciones juradas</b><span>en fecha</span></li></ul></aside></div></section>
+
+<section class="s" id="que-necesitas"><div class="w"><div class="cab"><h2 class="t">¿Qué necesitás?</h2><p>Elegí tu situación y te cuento cómo te puedo ayudar.</p></div>
+<div class="tabs" role="tablist"><button type="button" class="tab" role="tab" data-k="mono" aria-selected="false">Soy monotributista</button><button type="button" class="tab" role="tab" data-k="emp" aria-selected="false">Tengo empleados</button><button type="button" class="tab" role="tab" data-k="soc" aria-selected="false">Quiero abrir una empresa</button><button type="button" class="tab" role="tab" data-k="imp" aria-selected="false">Ganancias y Bienes Personales</button></div>
+<div class="panel"><div><h3 id="nh"></h3><p id="np"></p></div><a class="btn a" id="panelgo" data-wa href="#contacto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Consultar esto</a></div></div></section>
+
+<section class="s"><div class="w"><div class="cab"><h2 class="t">Cómo trabajamos</h2><p>Simple, ordenado y sin sorpresas.</p></div>
+<div class="pasos"><div class="paso"><small>PASO 1</small><h3>Charlamos</h3><p>Me contás tu situación y qué necesitás. Sin compromiso.</p></div>
+<div class="paso"><small>PASO 2</small><h3>Te propongo un plan</h3><p>Qué hay que hacer, cuándo y cuánto cuesta, por escrito.</p></div>
+<div class="paso"><small>PASO 3</small><h3>Me ocupo yo</h3><p>Llevo los vencimientos y te aviso antes de cada uno.</p></div></div></div></section>
+
+<section class="s"><div class="w yo"><div class="foto">Foto de Maxi<br>(a completar)</div>
+<div><h2 class="t" style="margin-bottom:18px">Sobre mí</h2><p>Soy Maximiliano Lagrotta, contador público. Trabajo con monotributistas, profesionales y pymes que quieren tener sus impuestos en orden sin perder tiempo.</p>
+<p>Me gusta explicar las cosas claras: que sepas qué pagás, por qué y cuándo.</p>
+<div class="chips"><span>Monotributo</span><span>Responsables inscriptos</span><span>Sueldos</span><span>Sociedades</span><span>Ganancias</span></div></div></div></section>
+
+<section class="s" id="contacto"><div class="w"><div class="contacto"><div><h2 class="t">Hablemos</h2><p class="in">Dejame tu consulta y se abre WhatsApp con el mensaje listo. Te respondo en el día.</p></div>
+<form class="f" onsubmit="return false"><label>Tema<select id="tema"><option>Soy monotributista</option><option>Tengo empleados</option><option>Quiero abrir una empresa</option><option>Ganancias y Bienes Personales</option><option>Otra consulta</option></select></label><label>Tu nombre<input id="nom" autocomplete="name" placeholder="Nombre y apellido"></label>
+<label>Contame brevemente<textarea id="msg" placeholder="Opcional"></textarea></label><button type="button" class="go"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Enviar por WhatsApp</button></form></div></div></section>
+</main>
+<footer><div class="w"><b>Maximiliano Lagrotta · Contador Público</b>Bahía Blanca</div></footer>
+<nav class="barra" aria-label="Contacto"><a class="btn a" data-wa href="#contacto" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.85L3.5 20.5l4.3-1.15A8.5 8.5 0 1 0 12 3.5z"/></svg>Escribime por WhatsApp</a></nav>
+<div class="demo">Versión de muestra</div><script>
+(function(){var N=[["mono", "Soy monotributista", "Alta, recategorización en enero y julio, facturación y baja. Te aviso cuándo te toca y qué tenés que hacer."], ["emp", "Tengo empleados", "Liquidación de sueldos, altas y bajas, cargas sociales y recibos todos los meses."], ["soc", "Quiero abrir una empresa", "Elegimos la figura que te conviene, armamos la sociedad y dejamos todo en regla para arrancar."], ["imp", "Ganancias y Bienes Personales", "Declaraciones juradas anuales, anticipos y planificación para no llevarte sorpresas."]];var cur=N[0][0];
+function show(k){cur=k;var n=N.filter(function(x){return x[0]===k})[0];document.querySelectorAll('.tab').forEach(function(t){t.setAttribute('aria-selected',t.getAttribute('data-k')===k)});
+document.getElementById('nh').textContent=n[1];document.getElementById('np').textContent=n[2];
+var s=document.getElementById('tema');if(s)s.value=n[1]}
+document.querySelectorAll('.tab').forEach(function(t){t.onclick=function(){show(t.getAttribute('data-k'))}});show(cur);
+function wa(t){var num='';return num?'https://wa.me/549'+num+'?text='+encodeURIComponent(t):'#contacto'}
+document.querySelectorAll('[data-wa]').forEach(function(a){a.href=wa('Hola Maxi! Quería hacerte una consulta.')});
+document.getElementById('panelgo').onclick=function(e){var n=N.filter(function(x){return x[0]===cur})[0];this.href=wa('Hola Maxi! Te escribo por: '+n[1]+'.')};
+document.querySelector('.go').onclick=function(){var t='Hola Maxi! Te escribo desde tu web.\nTema: '+document.getElementById('tema').value;
+var nom=document.getElementById('nom').value,msg=document.getElementById('msg').value;if(nom)t+='\nSoy: '+nom;if(msg)t+='\n'+msg;
+var u=wa(t);if(u==='#contacto'){this.textContent='Demo: falta cargar el WhatsApp';return}window.open(u,'_blank')};
+})();
+</script></body></html>
